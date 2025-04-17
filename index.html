@@ -17,15 +17,96 @@
     .linha-contato { font-size: 14px; color: #3d3d3d; }
     .linha-contato a { text-decoration: none; color: inherit; }
     button { margin-top: 16px; padding: 8px 12px; font-size: 14px; cursor: pointer; }
+
+    /* Borda apenas para visualização, não copiada pelo script */
+    #assinatura {
+    border: 2px solid #055441;
+    padding: 12px;
+    display: inline-block;
+    }
+
+
+    /* Estilos para seção de instruções */
+    #instrucoes-uso {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #3d3d3d;
+    }
+    #instrucoes-uso h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #055441;
+    }
+    #instrucoes-uso ol {
+      padding-left: 20px;
+    }
+    #instrucoes-uso li {
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    #instrucoes-uso img {
+      max-width: 100%;
+      display: block;
+      margin: 8px 0;
+    }
   </style>
 </head>
 <body>
+
+  <div id="cabecalho-pagina" style="text-align: right; padding: 10px; font-family: 'Mulish', sans-serif; font-weight: 300; color: #055441;font-size: 10px">
+    Desenvolvido por <br>
+    DAT Aprender Editora
+    
+  </div>
+  <hr style="border: 0.5px solid #055441; margin-top: 8px;">
   <select id="usuarios">
     <option value="">Selecione seu nome</option>
-  </select>
+  </select><br>
 
-  <div id="assinatura"></div>
+  <div id="assinatura"></div><br>
   <button id="copyBtn" style="display: none;">Copiar assinatura</button>
+
+  <!-- Seção de Instruções de Uso (extraída de Instruções Assinaturas.rtf) -->
+  <div id="instrucoes-uso">
+    <h2>Instruções de Uso</h2>
+    <p>Agora, você irá realizar a inclusão da assinatura no seu Gmail. Para executar os procedimentos corretamente, acesse através de um computador.</p>
+    <ol>
+      <li>
+        Abra o navegador e acesse <a href="https://mail.google.com" target="_blank" rel="noopener">gmail.com</a>.<br>
+        Faça login informando seu e‑mail e senha.
+        <!--<img src="" alt="Login no Gmail">-->
+      </li>
+      <li>
+        Com a conta aberta, clique no ícone de <strong>configurações</strong>. Representado pela engrenagem
+        <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/9e2ae324deea284283471169df2a202fd3e92896/config_google.png" alt="Ícone de configurações">
+      </li>
+      <li>
+        Na aba que se abriu, clique em <strong>Mostrar todas as configurações</strong>.<br>
+          <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/9e2ae324deea284283471169df2a202fd3e92896/show_all_config.png" alt="Criar nova assinatura"> 
+      </li>
+      <li>
+          Role até a seção <strong>Assinaturas</strong> e clique em “Criar novo” para adicionar uma nova assinatura.
+        <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/9e2ae324deea284283471169df2a202fd3e92896/new_assi.png" alt="Criar nova assinatura"> 
+      </li>
+      <li>
+        Na janela, digite <strong>APRENDER</strong> no campo de nome da assinatura e clique em <strong>Criar</strong>.
+        <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/9e2ae324deea284283471169df2a202fd3e92896/name.png" alt="Nome da assinatura">
+      </li>
+      <li>
+        Cole a assinatura que você copiou (clique dentro da área de texto e pressione Ctrl + V).
+        <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/9e2ae324deea284283471169df2a202fd3e92896/colar_assi.png" alt="Colar assinatura">
+      </li>
+      <li>
+        Logo abaixo, em <strong>Padrões de assinatura</strong>, selecione a assinatura “APRENDER” tanto para novos e‑mails quanto para respostas/encaminhamentos.
+        <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/9e2ae324deea284283471169df2a202fd3e92896/select_ass.png" alt="Padrões de assinatura">
+      </li>
+      <li>
+        Role até o final da página e clique em <strong>Salvar alterações</strong>.
+        <img src="https://raw.githubusercontent.com/Limanita/assinaturas-img/refs/heads/main/save.png" alt="Salvar alterações">
+      </li>
+      </ol>
+      </div>
+      <h2><strong>Pronto! Sua assinatura de e‑mail foi configurada com sucesso.</strong></h2>
 
   <script>
     // 1) busca usuários
