@@ -136,67 +136,74 @@
           const telefone = info.Telefone || '85 3194-1300';
           const celular  = info.Celular  || '';
           const email    = info.Email    || '';
-          const site     = 'www.aprendereditora.com.br';
+          const site     = 'aprendereditora.com.br';
 
           const html = `
-            <table width="580" border="0" cellpadding="0" cellspacing="0" style="font-family: 'Mulish', Helvetica, Arial, sans-serif; margin: 0; background-color: #055441; background: linear-gradient(135deg, #055441 0%, #1a7a60 100%); color: #ffffff; border-radius: 8px; border: 1px solid #044a39;">
+            <table width="580" border="0" cellpadding="0" cellspacing="0" style="font-family: 'Mulish', Helvetica, Arial, sans-serif; margin: 0; background-image: url('https://i.imgur.com/yp9P7h4.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #ffffff; color: #333333; border-radius: 8px; border: 1px solid #cccccc;">
                 <tr>
-                    <td style="padding: 30px 25px;">
+                    <td style="padding: 16px 16px;">
                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td width="280" style="vertical-align: middle; padding-right: 15px;">
+                                <td width="180" style="vertical-align: middle; padding-right: 10px; text-align: center;">
+                                    <a href="https://${site}" target="_blank" style="text-decoration: none;">
+                                        <img src="https://i.imgur.com/SADSdPK.png" alt="Aprender Editora" width="60" style="display: block; margin: 0 auto 8px auto; border: 0;">
+                                    </a>
                                     
-                                    <div style="margin-bottom: 18px;">
-                                        <h1 style="margin: 0; font-size: 22px; color: #ffffff; font-weight: 800; letter-spacing: 0.5px; line-height: 1.2; text-transform: uppercase;">${info.Nome}</h1>
-                                        <p style="margin: 4px 0 0 0; font-size: 13px; color: #a3e0cf; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                                            ${info.Cargo}
-                                        </p>
-                                        ${info.Setor ? `<p style="margin: 2px 0 0 0; font-size: 11px; color: #ffffff; opacity: 0.7;">${info.Setor}</p>` : ''}
-                                    </div>
-                                    
-                                    <table border="0" cellpadding="0" cellspacing="0" style="font-size: 13px;">
+                                    <a href="https://${site}" style="color: #055441; align-items: center; text-decoration: none; font-size: 12px; display: block; margin-bottom: 8px; font-weight: 600; letter-spacing: 0.5px;">
+                                        🌐 ${site}
+                                    </a>
+
+                                    <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
                                         <tr>
-                                            <td width="22" style="vertical-align: middle; padding-bottom: 6px;">
-                                                <span style="font-size: 16px;">✉️</span>
+                                            <td style="padding: 0 4px;">
+                                                <a href="https://www.instagram.com/aprendereditora" style="text-decoration:none;">
+                                                    <img src="https://i.imgur.com/wTeSRVM.png" width="24" style="display: block; border: 0;">
+                                                </a>
                                             </td>
-                                            <td style="vertical-align: middle; padding-bottom: 6px;">
-                                                <a href="mailto:${email}" style="color: #ffffff; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.3);">${email}</a>
+                                            <td style="padding: 0 4px;">
+                                                <a href="https://www.facebook.com/AprenderEditora" style="text-decoration:none;">
+                                                    <img src="https://i.imgur.com/6NDTGPO.png" width="24" style="display: block; border: 0;">
+                                                </a>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="22" style="vertical-align: middle; padding-bottom: 6px;">
-                                                <span style="font-size: 16px; ">📞</span>
-                                            </td>
-                                            <td style="vertical-align: middle; padding-bottom: 6px;">
-                                                <a href="tel:${telefone.replace(/[^+\d]/g,'')}" style="color: #ffffff; text-decoration: none;">${telefone}</a>
-                                                ${celular ? ` <span style="opacity:0.6">|</span> <a href="tel:${celular.replace(/[^+\d]/g,'')}" style="color: #ffffff; text-decoration: none;">${celular}</a>` : ''}
+                                            <td style="padding: 0 4px;">
+                                                <a href="https://x.com/aprendereditora" style="text-decoration:none;">
+                                                    <img src="https://i.imgur.com/YusA8k3.png" width="24" style="display: block; border: 0;">
+                                                </a>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
 
-                                <td width="1" style="background-color: rgba(255,255,255,0.3); font-size: 1px; line-height: 1px;">&nbsp;</td>
+                                <td width="1" style="background-color: #055441; opacity: 0.3; font-size: 1px; line-height: 1px;">&nbsp;</td>
 
-                                <td width="220" style="vertical-align: middle; padding-left: 20px; text-align: center;">
-                                        <a href="https://${site}" target="_blank" style="text-decoration: none;">
-                                        <img src="https://imgur.com/bRuRkub.png" alt="Aprender Editora" width="200" style="display: block; margin-bottom: 15px; border: 0;">
-                                    </a>
-                                    
-                                    <a href="https://${site}" style="color: #ffffff; align-items: center; text-decoration: none; font-size: 12px; display: block; margin-bottom: 12px; font-weight: 600; letter-spacing: 0.5px;">
-                                        🌐 ${site}
-                                    </a>
-
-                                    <div style="display: flex; align-items: center; justify-content: center;">
-                                        <a href="https://www.instagram.com/aprendereditora" style="text-decoration:none; margin-right: 8px;">
-                                            <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/instagram-icon-2x.png" width="24" style="filter: brightness(0) invert(1); opacity: 0.9; border-radius: 50%; display: block;">
-                                        </a>
-                                        <a href="https://www.facebook.com/AprenderEditora" style="text-decoration:none; margin-right: 8px;">
-                                            <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png" width="24" style="filter: brightness(0) invert(1); opacity: 0.9; border-radius: 50%; display: block;">
-                                        </a>
-                                        <a href="https://x.com/aprendereditora" style="text-decoration:none;">
-                                            <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/x-icon-2x.png" width="24" style="filter: brightness(0) invert(1); opacity: 0.9; border-radius: 50%; display: block;">
-                                        </a>
+                                <td width="380" style="vertical-align: middle; padding-left: 20px;">
+                                    <div style="margin-bottom: 18px;">
+                                        <h1 style="margin: 0; font-size: 22px; color: #055441; font-weight: 800; letter-spacing: 0.5px; line-height: 1.2; text-transform: uppercase;">${info.Nome}</h1>
+                                        <p style="margin: 4px 0 0 0; font-size: 13px; color: #1a7a60; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                                            ${info.Cargo}
+                                        </p>
+                                        ${info.Setor ? `<p style="margin: 2px 0 0 0; font-size: 11px; color: #555555; opacity: 0.9;">${info.Setor}</p>` : ''}
                                     </div>
+                                    
+                                    <table border="0" cellpadding="0" cellspacing="0" style="font-size: 13px; color: #333333;">
+                                        <tr>
+                                            <td width="22" style="vertical-align: middle; padding-bottom: 6px;">
+                                                <span style="font-size: 16px;">✉️</span>
+                                            </td>
+                                            <td style="vertical-align: middle; padding-bottom: 6px;">
+                                                <a href="mailto:${email}" style="color: #333333; text-decoration: none; border-bottom: 1px dotted #055441;">${email}</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="22" style="vertical-align: middle; padding-bottom: 6px;">
+                                                <span style="font-size: 16px;">📞</span>
+                                            </td>
+                                            <td style="vertical-align: middle; padding-bottom: 6px;">
+                                                <a href="tel:${telefone.replace(/[^+\d]/g,'')}" style="color: #333333; text-decoration: none;">${telefone}</a>
+                                                ${celular ? ` <span style="opacity:0.6">|</span> <a href="tel:${celular.replace(/[^+\d]/g,'')}" style="color: #333333; text-decoration: none;">${celular}</a>` : ''}
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                         </table>
